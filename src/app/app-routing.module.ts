@@ -15,7 +15,8 @@ const routes: Routes = [
   ]},
   { path: 'contact', component: ContactComponent },
   //Wrong Route
-  {path: '**', component: WrongRouteComponent}
+  {path: 'error404', component: WrongRouteComponent},
+  {path: '**', redirectTo: '/error404'}
 ];
 
 @NgModule({
